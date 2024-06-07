@@ -1,0 +1,30 @@
+{
+  "name": "ChatGPT",
+  "version": "1.0.0",
+  "description": "ChatGPT Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.yourname.chatgpt",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility",
+      "icon": "chat-gpt.png"
+    }
+  },
+  "author": {
+    "name": "Bing Wen",
+    "email": "venokinetic@gmail.com"
+  },
+  "devDependencies": {
+    "electron": "^30.1.0",
+    "electron-builder": "^25.0.0-alpha.9"
+  }
+}
